@@ -16,6 +16,7 @@
         <section class="card-header">
           <h2>Generate a Password</h2>
         </section>
+        <!-- Text field below for displaying password -->
         <section class="card-body">
           <textarea
             readonly
@@ -25,8 +26,10 @@
           ></textarea>
         </section>
         <section class="card-footer">
+          <!-- Button for generating the password -->
           <button id="generate" class="btn">Generate Password</button>
-          <button onclick="copyFunction()">Copy text</button>
+          <!-- Button for copying text added below -->
+          <button onclick="copyFunction()" class="copy-btn">Copy Text</button>
         </section>
       </section>
     </main>
