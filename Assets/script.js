@@ -125,7 +125,21 @@ function displayPassword() {
 generateButton.addEventListener("click", displayPassword);
 
 // copy password to clipboard
-var copyButton = document.getElementById("copy");
+function copyFunction() {
+  // Get the text field
+  var copyText = document.getElementById("password");
+
+  // Select the text field
+  copyText.select();
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+
+// var copyButton = document.getElementById("copy");
 
 function copyPassword() {
   var copyText = document.getElementById("password");
