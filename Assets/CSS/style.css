@@ -90,7 +90,7 @@ header {
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
-  margin: 16px 16px 16px 20px;
+  margin: 16px;
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
@@ -107,7 +107,7 @@ header {
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
-  margin: 16px 16px 16px 20px;
+  margin: 16px;
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;

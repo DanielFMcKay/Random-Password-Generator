@@ -134,16 +134,9 @@ function copyButton() {
 
    // Copy the text inside the text field
   navigator.clipboard.writeText(copyText.value);
-
-  // Alert the copied text
+  // "execCommaand" seems to be both deprecated and without a simple replacement.
+  document.execCommand("copy");
+  // Confirmation alert that the text has been copied
   window.alert("Your Secure Password has been copied successfully!");
 }
 
-// var copyButton = document.getElementById("copy");
-
-function copyPassword() {
-  var copyText = document.getElementById("password");
-  copyText.select();
-// "execCommaand" seems to be both deprecated and without a simple replacement.
-  document.execCommand("copy");
-}
