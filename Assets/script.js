@@ -110,10 +110,10 @@ var createPassword = function() {
   return generatedPassword;
 }
 
-// Get references to the #generate element
+// declare the Generate Password button
 var generateButton = document.getElementById("generate")
 
-// Add a password to the #password input
+// Put the password in the text field.
 function displayPassword() {
   var password = createPassword();
   var passwordText = document.getElementById("password");
@@ -121,11 +121,11 @@ function displayPassword() {
   passwordText.value = password;
 }
 
-// Add event listener to generate button
+// Add event listener to Generate Password button
 generateButton.addEventListener("click", displayPassword);
 
-// copy password to clipboard
-function copyFunction() {
+// Function and button for copying password to clipboard
+function copyButton() {
   // Get the text field
   var copyText = document.getElementById("password");
 
