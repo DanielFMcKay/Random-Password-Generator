@@ -14,4 +14,4 @@
 
 * There is also an option to copy the text. A button has been included for that as well. Once copied, confirmation of this is displayed.
 
-Random Password Generator for Coding Bootcamp Week 3 assignment
+* The site is deployed https://danielfmckay.github.io/Random-Password-Generator/
