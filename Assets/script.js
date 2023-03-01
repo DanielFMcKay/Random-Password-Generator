@@ -8,25 +8,16 @@ const characterTypeSelect = function() {
 
   if (!upperCase) {
     upperCase = "";
-    // display of choice and prompt to continue. I considered "Click OK to continue" redundant after the first time.
+    // display of choice and prompt to continue. 
+    // I considered "Click OK to continue" redundant after the first time.
     window.alert("You have selected not to include uppercase characters. Click OK to continue.");
-    
-    // I had initially decided to make it an option to stop the password creation process at any time,
-    // but it became too confusing in testing, so that code has all been removed, except the example below
-    // which has been commented out for display purposes.
-
-    // if (!noUpperCaseContinue) {
-      // return;
-      // } 
     } else {
     upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     window.alert("You have selected to include uppercase characters. Click OK to continue.");
-    
-  
   }
   
   // lowercase character confirmation and displayed validation of choice
-  var lowerCase = confirm('Do you want to include lowercase characters?');
+  let lowerCase = confirm('Do you want to include lowercase characters?');
 
   if (!lowerCase) {
     lowerCase = "";
@@ -39,7 +30,7 @@ const characterTypeSelect = function() {
 
 
   // numerals confirmation
-  var numerals = confirm('Do you want to include numbers?');
+  let numerals = confirm('Do you want to include numbers?');
   if (!numerals) {
     numerals = "";
     window.alert("You have selected not to include numbers."); 
@@ -49,7 +40,7 @@ const characterTypeSelect = function() {
   }
 
   // special characters confirmation
-  var specialCharacters = confirm("Do you want to include special characters?");
+  let specialCharacters = confirm("Do you want to include special characters?");
 
   if (!specialCharacters) {
     specialCharacters = "";
@@ -60,7 +51,7 @@ const characterTypeSelect = function() {
   }
 
   // this compiles the total possible characters to choose from for the password
-  var allPossibleCharacters = upperCase + lowerCase + numerals + specialCharacters;
+  let allPossibleCharacters = upperCase + lowerCase + numerals + specialCharacters;
   
   // confirms that at least one character type has been selected by the user
   if (allPossibleCharacters.length > 0) {
@@ -111,7 +102,7 @@ var createPassword = function() {
 }
 
 // declare the Generate Password button
-var generateButton = document.getElementById("generate")
+const generateButton = document.getElementById("generate")
 
 // Put the password in the text field.
 function displayPassword() {
@@ -134,9 +125,13 @@ function copyButton() {
 
    // Copy the text inside the text field
   navigator.clipboard.writeText(copyText.value);
-  // "execCommaand" seems to be both deprecated and without a simple replacement.
-  document.execCommand("copy");
+
   // Confirmation alert that the text has been copied
   window.alert("Your Secure Password has been copied successfully!");
+}
+
+function clearField() {
+document.getElementById("password").value = "";
+return;
 }
 

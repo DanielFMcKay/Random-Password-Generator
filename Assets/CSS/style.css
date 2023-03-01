@@ -59,61 +59,58 @@ header {
 }
 
 .card-footer {
+  border: none;
   text-align: center;
 }
 
-.card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
 
-.card-footer::after {
-  content: " ";
-  display: block;
-  clear: both;
-}
 
 .btn {
-  border: none;
   background-color: hsla(249, 100%, 34%, 0.774);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
   color: hsl(0, 0%, 100%);
-  display: inline-block;
-  font-size: 22px;
-  line-height: 22px;
   margin: 16px;
   padding: 14px 34px;
-  text-align: center;
   cursor: pointer;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 24px;
 }
 
-/* same stylizing as .btn except color */
+
+/* Same stylizing as .btn except color. */
+/* Doesn't seem to inherit all attributes from card-footer class, unfortunately. */
 .copy-btn {
-  border: none;
   background-color: hsla(135, 65%, 26%, 0.774);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
   color: hsl(0, 0%, 100%);
+  margin: 16px;
+  padding: 14px 34px;
+  cursor: pointer;
   display: inline-block;
   font-size: 22px;
+  line-height: 24px;
+}
+
+.clear-btn {
+  background-color: rgba(97, 79, 45, 0.822);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
   line-height: 22px;
   margin: 16px;
   padding: 14px 34px;
-  text-align: center;
   cursor: pointer;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 24px;
 }
 
-
-button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
-}
 
 .float-right {
   float: right;
