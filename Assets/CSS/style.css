@@ -17,7 +17,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #e7f7fd;
+  background-color: #f1fcff;
 }
 
 .wrapper {
@@ -64,9 +64,9 @@ header {
 }
 
 
-
-.btn {
-  background-color: hsla(249, 100%, 34%, 0.774);
+.btn,
+.copy-btn,
+.clear-btn {
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -77,6 +77,10 @@ header {
   display: inline-block;
   font-size: 22px;
   line-height: 24px;
+}
+
+.btn {
+  background-color: hsla(249, 100%, 34%, 0.774);
 }
 
 
@@ -84,36 +88,10 @@ header {
 /* Doesn't seem to inherit all attributes from card-footer class, unfortunately. */
 .copy-btn {
   background-color: hsla(135, 65%, 26%, 0.774);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
-  margin: 16px;
-  padding: 14px 34px;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 22px;
-  line-height: 24px;
-}
+  }
 
 .clear-btn {
   background-color: rgba(97, 79, 45, 0.822);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
-  line-height: 22px;
-  margin: 16px;
-  padding: 14px 34px;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 22px;
-  line-height: 24px;
-}
-
-
-.float-right {
-  float: right;
 }
 
 #password {
