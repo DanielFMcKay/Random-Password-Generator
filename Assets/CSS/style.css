@@ -63,7 +63,7 @@ header {
   text-align: center;
 }
 
-
+/* combined styling for each button */
 .btn,
 .copy-btn,
 .clear-btn {
@@ -83,9 +83,6 @@ header {
   background-color: hsla(249, 100%, 34%, 0.774);
 }
 
-
-/* Same stylizing as .btn except color. */
-/* Doesn't seem to inherit all attributes from card-footer class, unfortunately. */
 .copy-btn {
   background-color: hsla(135, 65%, 26%, 0.774);
   }
