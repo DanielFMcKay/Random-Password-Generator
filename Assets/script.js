@@ -68,6 +68,8 @@ var createPassword = function() {
   var startPassword = confirm("Please create a password based on the following criteria.\nClick OK to continue.");
 //  I know this part seems redundant, but one seems to get caught in a recursive loop under certain circumstances if not included
   if (!startPassword) {
+  // exits process and prevents "undefined" from showing
+    passwordText.value = "";
     return;
   }
 
@@ -85,6 +87,8 @@ var createPassword = function() {
     var passLengthDisplay = confirm(`You have selected a password ${passLength} characters long.`);
   }
     if (!passLengthDisplay) {
+  // exits process and prevents "undefined" from showing
+      passwordText.value = "";
       return;
     }
   
