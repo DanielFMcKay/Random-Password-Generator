@@ -1,8 +1,12 @@
-![image](https://user-images.githubusercontent.com/123746582/221455179-9f32179b-20d7-4df6-875a-f4c0965ffd93.png)
-
 # Random-Password-Generator
 
-* This password generator is for the UC Berkeley Coding Bootcamp, challenge assignment for Week 3.
+![image](https://img.shields.io/badge/License-MIT-slateblue.svg)
+
+![image](https://user-images.githubusercontent.com/123746582/221455179-9f32179b-20d7-4df6-875a-f4c0965ffd93.png)
+
+### Overview
+
+* This password generator is for the edX Full-Stack Coding Bootcamp as offered through UC Berkeley continuing education, and is the challenge assignment for Week 3.
 
 * The generator will create a randomized password according to a series of prompts, as per the assignment.
 
@@ -14,4 +18,13 @@
 
 * There is also an option to copy the text. A button has been included for that as well. Once copied, confirmation of this is displayed.
 
-* The site is deployed https://danielfmckay.github.io/Random-Password-Generator/
+### Live Site
+
+* The live site is deployed https://danielfmckay.github.io/Random-Password-Generator/
+
+
+### License
+
+This app falls under the [MIT License](https://choosealicense.com/licenses/mit/).
+
+(c) Dan McKay 2023
